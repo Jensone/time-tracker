@@ -1,0 +1,128 @@
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+    }
+    a {text-decoration: none;}
+
+    /* Flexbox Grid */
+    .flex {display: flex;}
+    .flex-column {flex-direction: column;}
+    .flex-row {flex-direction: row;}
+    .flex-wrap {flex-wrap: wrap;}
+    .flex-nowrap {flex-wrap: nowrap;}
+    .flex-justify-center {justify-content: center;}
+    .flex-justify-between {justify-content: space-between;}
+    .flex-justify-around {justify-content: space-around;}
+    .flex-align-center {align-items: center;}
+    .flex-align-start {align-items: flex-start;}
+    .flex-align-end {align-items: flex-end;}
+    .flex-align-stretch {align-items: stretch;}
+    .flex-align-baseline {align-items: baseline;}
+    .flex-align-space-between {align-items: space-between;}
+    .flex-align-space-around {align-items: space-around;}
+    .flex-align-space-evenly {align-items: space-evenly;}
+    .flex-align-self-start {align-self: flex-start;}
+    .flex-align-self-end {align-self: flex-end;}
+    .flex-align-self-center {align-self: center;}
+    .flex-align-self-stretch {align-self: stretch;}
+    .flex-align-self-baseline {align-self: baseline;}
+    .flex-align-self-auto {align-self: auto;}
+    .flex-align-self-normal {align-self: normal;}
+    .w100 { width: 100%; }
+
+    /* Colors */
+
+  :root {
+  
+    /* Primary */
+    --Blue-Incognito: hsl(228, 45%, 44%);
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+body { background-color: var(--Very-dark-blue); }
+
+/* Aside */
+aside {
+  background-color: var(--Dark-blue);
+  margin: 30px;
+}
+aside header {
+  background-color: var(--Blue);
+}
+aside footer {
+  padding: 28px 0;
+}
+aside footer li:hover, .subtitle, .title, .activity header a:hover, .past-hours {
+  color: var(--Pale-Blue)
+}
+aside footer li:hover, .activity header a:hover {
+  cursor: pointer;
+}
+aside footer li, .activity header a {
+  color: var(--Desaturated-blue)
+}
+aside, 
+aside header, 
+.activity,
+.activity section {
+  border-radius: 20px;
+}
+aside header img {
+  border: 3px solid #fff;
+  border-radius: 200px;
+  width: 100px;
+  margin: 20px;
+}
+.title {
+  font-size: 1.5em;
+}
+
+/* Main */
+.activity  {
+  position: relative;
+  height: 200px;
+  margin: 30px;
+  background-color: var(--Light-red-work);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 96% -4%;
+  color: #fff;
+}
+/* .activity .work {
+
+} */
+.activity section {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: var(--Dark-blue);
+  padding: 30px;
+}
+.hours {
+  font-size: 2em;
+}
+.activity section:hover {
+  background-color: var(--Blue-Incognito);
+}
+#activities ul {
+  color: #fff;
+}
