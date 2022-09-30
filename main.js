@@ -1,9 +1,3 @@
-// let activity = document.querySelector('#activity');
-// for (let activity in data) {
-        //     console.log(activity.title);
-        // }
-
-
 // Fetch my json file
 fetch('data.json')
     .then(response => response.json())
@@ -27,6 +21,7 @@ fetch('data.json')
             </section>
             `
             item.classList.add("activity");
+            item.classList.add("coucou");
             activity.appendChild(item)
         }
         document.querySelector("#activities").appendChild(activity);
