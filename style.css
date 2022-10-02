@@ -71,13 +71,13 @@ aside footer {
   padding: 28px 0;
 }
 aside footer li:hover, .subtitle, .title, .activity header a:hover, .past-hours {
-  color: var(--Pale-Blue)
+  color: var(--Pale-Blue);
 }
 aside footer li:hover, .activity header a:hover {
   cursor: pointer;
 }
 aside footer li, .activity header a {
-  color: var(--Desaturated-blue)
+  color: var(--Desaturated-blue);
 }
 aside, 
 aside header, 
@@ -89,7 +89,7 @@ aside header img {
   border: 3px solid #fff;
   border-radius: 200px;
   width: 100px;
-  margin: 20px;
+  margin: 10px;
 }
 .title {
   font-size: 1.5em;
@@ -111,12 +111,14 @@ aside header img {
   width: 100%;
   background-color: var(--Dark-blue);
   padding: 30px;
+  transition: background-color 0.5s;
 }
 .hours {
   font-size: 2em;
 }
 .activity section:hover {
   background-color: var(--Blue-Incognito);
+  transition: background-color 0.5s;
 }
 #activities ul {
   color: #fff;
