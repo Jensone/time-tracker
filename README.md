@@ -1,5 +1,11 @@
 # Time tracking dashboard
 
+![Build Status](https://travis-ci.org/TimeTrackingDashboard/time-tracking-dashboard.svg?branch=master)
+
+---
+
+![image of the dashboard](design/desktop-design.jpg)
+
 Challenge by [Frontend Mentor](https://www.frontendmentor.io)
 
 **HTML, CSS and JavaScript**
