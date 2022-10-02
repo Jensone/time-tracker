@@ -100,15 +100,10 @@ aside header img {
   position: relative;
   height: 200px;
   margin: 30px;
-  background-color: var(--Light-red-work);
-  background-image: url("images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: 96% -4%;
   color: #fff;
 }
-/* .activity .work {
-
-} */
 .activity section {
   position: absolute;
   bottom: 0;
@@ -127,22 +122,28 @@ aside header img {
   color: #fff;
 }
 
-/* Activities */
-.Work {
+/* Activities per card */
+.activity:has(.Work) {
   background-color: var(--Light-red-work);
   background-image: url("images/icon-work.svg");
-  background-repeat: no-repeat;
-  background-position: 96% -4%;
 }
-.Play {
+.activity:has(.Play) {
   background-color: var(--Soft-blue-play);
   background-image: url("images/icon-play.svg");
-  background-repeat: no-repeat;
-  background-position: 96% -4%;
 }
-.Exercices {
+.activity:has(.Study) {
+  background-color: var(--Light-red-study);
+  background-image: url("images/icon-study.svg");
+}
+.activity:has(.Exercise) {
   background-color: var(--Lime-green-exercise);
-  background-image: url("images/icon-exercices.svg");
-  background-repeat: no-repeat;
-  background-position: 96% -4%;
+  background-image: url("images/icon-exercise.svg");
+}
+.activity:has(.Social) {
+  background-color: var(--Violet-social);
+  background-image: url("images/icon-self-care.svg");
+}
+.activity:has(.Self.Care) {
+  background-color: var(--Soft-orange-self-care);
+  background-image: url("images/icon-social.svg");
 }

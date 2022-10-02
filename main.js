@@ -1,13 +1,16 @@
+
 // Fetch my json file
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        // Display my data in a loop
-        let activity = document.createElement("ul")
+        // Select the ul tag to display the data
+        let activities = document.querySelector("#activities")
+        // Display my data in a loop with a li tag
         for (let i of data) { 
-            let item = document.createElement("ul")
-            item.innerHTML = `
-            <section class="flex flex-column flex-justify-center">
+            let item = document.createElement("article")
+            item.innerHTML = 
+            `
+            <section class="${i.title} flex flex-column flex-justify-center">
                 <header class="flex flex-justify-between w100">
                     <h4>${i.title}</h4>
                     <a href="#">
@@ -21,8 +24,8 @@ fetch('data.json')
             </section>
             `
             item.classList.add("activity");
-            item.classList.add("coucou");
-            activity.appendChild(item)
+            // item.classList.add(i.title);
+            activities.appendChild(item)
         }
         document.querySelector("#activities").appendChild(activity);
         // data.forEach(data => {
